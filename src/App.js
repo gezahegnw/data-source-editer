@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import DataForm from './DataForms/DataForm';
+import DataSourceInputForm from './DataForm/DataSourceInput';
 function App() {
   return (
     <div className="App">
-      <DataForm />      
+      <DataSourceInputForm />      
     </div>
   );
 }
