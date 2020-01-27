@@ -6,9 +6,9 @@ import Form from "react-bootstrap/Form";
 
 class GetSourceData extends Component {
   state = {
-    dataName: "",
+    dataName: '',
     isParams: false,
-    queryData: "",
+    queryData: '',
     getObjectData: Data,
     showInputField: false
   };
@@ -68,7 +68,7 @@ class GetSourceData extends Component {
             <Form.Control
               //this.state.name  value is passed down here from dataSourceinput component
               type="text"
-              value={this.state.dataName}
+              defaultValue={this.state.dataName}
               name="dataName"
               onChange={this.handleChange}
               placeholder=""
@@ -84,7 +84,7 @@ class GetSourceData extends Component {
               rows="8"
               type="textarea"
               name="queryData"
-              value={this.state.queryData}
+              defaultValue={this.state.queryData}
               onChange={this.handleChange}
             />
           </Form.Group>
